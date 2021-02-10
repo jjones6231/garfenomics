@@ -1,17 +1,45 @@
 .button {
-  padding: 14px 60px;
-  background-color: #E02415;
   border: none;
-  text-align: center;
+  text-align: right;
   font-size: 20px;
-  display: block;
   color: #FFFFFF;
   transition: 0.25s;
   margin:4px 2px;
 }
 
-.button:hover{
-  background-color: DarkRed;
+.button1{
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("images/employee.png");
+}
+
+.button2{
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("images/ad.png")
+}
+
+.button3{
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("images/PC.png");
+}
+
+.button4{
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("images/office.png");
+}
+
+.button5{
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("images/jim.png");
 }
 
 .image{
@@ -27,7 +55,7 @@
 #garfContainer{
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 100px;
     transition: 0.3s
 }
 
@@ -39,14 +67,23 @@ body{
   background: rgba(255, 101, 92, 1.0);
 }
 
+.bruh{
+  width: auto;
+  height: auto;
+  left: 460px;
+  font-size: 22px;
+  color: #000000;
+  display: block;
+}
+
 .buttons{
   display: inline-block;
-  width: 60px;
-  height: 70px;
+  width: 250px;
+  height: 100px;
   position: absolute;
-  background-color: #123456;
-  right: 20%;
+  right: 20px;
 }
+
 
 .text{
   position: relative;

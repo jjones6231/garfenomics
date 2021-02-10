@@ -6,12 +6,13 @@
   font-size: 20px;
   display: block;
   color: #FFFFFF;
+  transition: 0.25s;
+  margin:4px 2px;
 }
 
 .button:hover{
-  background-color: #111111;
+  background-color: DarkRed;
 }
-
 
 .image{
   position: absolute;
@@ -23,10 +24,15 @@
   -moz-animation:spin 4s linear infinite;*/
 }
 
-#garf{
+#garfContainer{
     position: absolute;
     top: 25%;
     left: 30%;
+    transition: 0.3s
+}
+
+#garfContainer.active {
+  transform: translateY(400px);
 }
 
 body{

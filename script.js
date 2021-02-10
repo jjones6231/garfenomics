@@ -161,6 +161,7 @@ function hacks(){
   }
 }
 
+
 window.setInterval(function(){
   gametime++;
   if(ddosTime < 10){

@@ -1,3 +1,7 @@
+.gameContainer{
+  display: inline-block;
+}
+
 .button {
   border: none;
   text-align: right;
@@ -5,67 +9,58 @@
   color: #FFFFFF;
   transition: 0.25s;
   margin:4px 2px;
-}
-
-.button1{
   width: 250px;
   height: 100px;
   display: inline-block;
+}
+
+.button1{
   background-image: url("images/employee.png");
 }
 
 .button2{
-  width: 250px;
-  height: 100px;
-  display: inline-block;
   background-image: url("images/ad.png")
 }
 
 .button3{
-  width: 250px;
-  height: 100px;
-  display: inline-block;
   background-image: url("images/PC.png");
 }
 
 .button4{
-  width: 250px;
-  height: 100px;
-  display: inline-block;
   background-image: url("images/office.png");
 }
 
 .button5{
-  width: 250px;
-  height: 100px;
-  display: inline-block;
   background-image: url("images/jim.png");
 }
 
-.image{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  width: 256px;
-  height: 256px;
-  /*webkit-animation:spin 4s linear infinite;
-  -moz-animation:spin 4s linear infinite;*/
+.button6{
 }
 
-#garfContainer{
+.button7{
+
+}
+
+.button8{
+
+}
+
+.button9{
+
+}
+
+
+.garfContainer{
     position: absolute;
-    top: 25%;
-    left: 100px;
-    transition: 0.3s
-}
 
-#garfContainer.active {
-  transform: translateY(400px);
+    width: 100%;
+    margin-top: -5%;
 }
 
 body{
   background: rgba(255, 101, 92, 1.0);
 }
+
 
 .bruh{
   width: auto;
@@ -84,6 +79,13 @@ body{
   right: 20px;
 }
 
+.buttons2{
+  display: inline-block;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 20px;
+}
 
 .text{
   position: relative;

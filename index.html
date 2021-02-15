@@ -10,32 +10,61 @@
         <span id="counter">0</span> GARF
       </p>
     </div>
-    <div id="garfContainer">
-      <img src="garfCoin.png" alt="garf" id="garf" onClick="mouseClick()">
-    </div>
-    <div class="buttons">
-      <button type = "button" class="button button1" onClick="newSec()">
-        Secretaries: <span id="secritaries">0</span><br>
-        Cost: <span id="secretaryCost">10</span>
-      </button>
-      <button type = "button" class="button button2" onClick="newAd()">
-        Advertisments: <span id="ads">0</span><br>
-        Cost: <span id="adCost">100</span>
-      </button>
-      <button type = "button" class="button button3" onClick="newPC()">
-        PCs: <span id="PCs">0</span><br>
-        Cost: <span id="PCCost">2000</span>
-      </button>
-      <button type = "button" class="button button4" onClick="newOffice()">
-        Office: <span id="offices">0</span><br>
-        Cost: <span id="officeCost">100000</span>
-      </button>
-      <button type = "button" class="button button5" onClick="newJim()">
-        Jim Davis: <span id="jims">0</span><br>
-        Cost: <span id="jimCost">20000000</span>
-      </button>
+
+    <div class = "gameContainer">
+      <div class="buttons2">
+        <button type = "button" class="button button6" onClick="newTraining()">
+          Employee Training: <span id="Traning">0</span><br>
+          Cost: <span id="trainingCost">10</span>
+        </button>
+        <button type = "button" class="button button7" onClick="newAntivirus()">
+          Antivirus: <span id="antivirus">0</span><br>
+          Cost: <span id="antivirusCost">100</span>
+        </button>
+        <button type = "button" class="button button8" onClick="newAccess()">
+          Access Control: <span id="access">0</span><br>
+          Cost: <span id="AccessCost">2000</span>
+        </button>
+        <button type = "button" class="button button9" onClick="newProtection()">
+          DDos Protection: <span id="protection">0</span><br>
+          Cost: <span id="protectionCost">100000</span>
+        </button>
+      </div>
+
+      <div class="garfContainer">
+        <center>
+          <img src="garfCoin.png" alt="garf" id="garf" onClick="mouseClick()">
+        </center>
+      </div>
+
+      <div class="buttons">
+        <button type = "button" class="button button1" onClick="newSec()">
+          Secretaries: <span id="secretaries">0</span><br>
+          Cost: <span id="secretaryCost">10</span>
+        </button>
+        <button type = "button" class="button button2" onClick="newAd()">
+          Advertisements: <span id="ads">0</span><br>
+          Cost: <span id="adCost">100</span>
+        </button>
+        <button type = "button" class="button button3" onClick="newPC()">
+          PCs: <span id="PCs">0</span><br>
+          Cost: <span id="PCCost">2000</span>
+        </button>
+        <button type = "button" class="button button4" onClick="newOffice()">
+          Office: <span id="offices">0</span><br>
+          Cost: <span id="officeCost">100000</span>
+        </button>
+        <button type = "button" class="button button5" onClick="newJim()">
+          Jim Davis: <span id="jims">0</span><br>
+          Cost: <span id="jimCost">20000000</span>
+        </button>
+      </div>
+
     </div>
   </div>
+
+
+
   <div class="ddos" id="ddos" onClick="ddosClick()">
     YOU HAVE BEEN DDOSED! DDoS stands for Directed Denial of Service, and while it is occuring you can't do anything.<br>
     buy the DDoS protection upgrade to prevent this!

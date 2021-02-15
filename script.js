@@ -34,7 +34,7 @@ function newSec(){
   if(garfcoin >= cost){
     secritaries = secritaries + 1;
     subCoin(cost);
-    document.getElementById('secritaries').innerHTML = secritaries;
+    document.getElementById('secretaries').innerHTML = secritaries;
   }
   var nextCost = Math.floor(10 * Math.pow(1.1, secritaries));
   document.getElementById('secretaryCost').innerHTML = nextCost;

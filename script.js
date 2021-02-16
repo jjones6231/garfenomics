@@ -1,7 +1,7 @@
-var garfcoin = 0;
-var secritaries = 0;
+var garfcoin = 8000;
+var developers = 0;
 var gametime = 0;
-var ads = 0;
+var security = 0;
 var offices = 0;
 var jims = 0;
 var mouseStrength = 1;
@@ -9,6 +9,10 @@ var PCs = 0;
 var phishingStrength = 1;
 var ransomAmmount = 0;
 var ddosTime = 0;
+var training = 0;
+var antivirus = 0;
+var access = 0;
+var protection = 0;
 
 function garfClick(number){
   garfcoin += number;
@@ -29,26 +33,26 @@ function subCoin(cost){
   document.getElementById('counter').innerHTML = garfcoin;
 }
 
-function newSec(){
-  var cost = Math.floor(10 * Math.pow(1.1, secritaries));
+function newDev(){
+  var cost = Math.floor(10 * Math.pow(1.1, developers));
   if(garfcoin >= cost){
-    secritaries = secritaries + 1;
+    developers = developers + 1;
     subCoin(cost);
-    document.getElementById('secretaries').innerHTML = secritaries;
+    document.getElementById('developers').innerHTML = developers;
   }
-  var nextCost = Math.floor(10 * Math.pow(1.1, secritaries));
-  document.getElementById('secretaryCost').innerHTML = nextCost;
+  var nextCost = Math.floor(10 * Math.pow(1.1, developers));
+  document.getElementById('developerCost').innerHTML = nextCost;
 };
 
-function newAd(){
-  var cost = Math.floor(100 * Math.pow(1.1, ads));
+function newSec(){
+  var cost = Math.floor(100 * Math.pow(1.1, security));
   if(garfcoin >= cost){
-    ads = ads + 1;
+    security = security + 1;
     subCoin(cost);
-    document.getElementById('ads').innerHTML = ads;
+    document.getElementById('security').innerHTML = security;
   }
-  var nextCost = Math.floor(100 * Math.pow(1.1, ads));
-  document.getElementById('adCost').innerHTML = nextCost;
+  var nextCost = Math.floor(100 * Math.pow(1.1, security));
+  document.getElementById('secCost').innerHTML = nextCost;
 };
 
 function newPC(){
@@ -83,6 +87,50 @@ function newJim(){
   }
   var nextCost = Math.floor(20000000 * Math.pow(1.5, jims));
   document.getElementById('jimCost').innerHTML = nextCost;
+};
+
+function newTraining(){
+  var cost = Math.floor(2000 * Math.pow(1.1, training));
+  if(garfcoin >= cost){
+    training = training + 1;
+    subCoin(cost);
+    document.getElementById('training').innerHTML = training;
+  }
+  var nextCost = Math.floor(2000 * Math.pow(1.1, training));
+  document.getElementById('trainingCost').innerHTML = nextCost;
+};
+
+function newAntivirus(){
+  var cost = Math.floor(2000 * Math.pow(1.1, antivirus));
+  if(garfcoin >= cost){
+    antivirus = antivirus + 1;
+    subCoin(cost);
+    document.getElementById('antivirus').innerHTML = antivirus;
+  }
+  var nextCost = Math.floor(2000 * Math.pow(1.1, antivirus));
+  document.getElementById('antivirusCost').innerHTML = nextCost;
+};
+
+function newAccess(){
+  var cost = Math.floor(2000 * Math.pow(1.1, access));
+  if(garfcoin >= cost){
+    access = access + 1;
+    subCoin(cost);
+    document.getElementById('access').innerHTML = access;
+  }
+  var nextCost = Math.floor(2000 * Math.pow(1.1, access));
+  document.getElementById('accessCost').innerHTML = nextCost;
+};
+
+function newProtection(){
+  var cost = Math.floor(2000 * Math.pow(1.1, protection));
+  if(garfcoin >= cost){
+    protection = protection + 1;
+    subCoin(cost);
+    document.getElementById('protection').innerHTML = protection;
+  }
+  var nextCost = Math.floor(2000 * Math.pow(1.1, protection));
+  document.getElementById('protectionCost').innerHTML = nextCost;
 };
 
 function ddos(){
@@ -138,26 +186,35 @@ function ransomClick(){
 }
 
 function passiveGain(){
-  garfClick(Math.floor(secritaries));
-  garfClick(Math.floor(ads*5));
+  garfClick(Math.floor(developers));
+  garfClick(Math.floor(security*5));
   garfClick(Math.floor(offices*1000));
   garfClick(Math.floor(jims*100000));
 }
 
 function hacks(){
   var check = Math.floor(100* Math.random())
+  var checkSafe = Math.floor(10* Math.random()+1);
   if(gametime > 50 && check == 0){
-    ddos();
+    if(checkSafe>protection){
+      ddos();
+    }
   }
   if(gametime > 100 && check == 1){
-    phish();
+    if(checkSafe>training){
+      phish();
+    }
   }
   if(gametime > 150 && check == 2){
-    insiderAttack();
+    if(checkSafe>access){
+      insiderAttack();
+    }
   }
   if(gametime > 150 && check == 3){
-    var ransom = Math.floor(10000* Math.random());
-    ransomWare(ransom + 1000);
+    if(checkSafe>antivirus){
+      var ransom = Math.floor(10000* Math.random());
+      ransomWare(ransom + 1000);
+    }
   }
 }
 

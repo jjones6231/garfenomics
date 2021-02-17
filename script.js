@@ -157,6 +157,10 @@ function insiderAttack(){
   subCoin(Math.floor(garfcoin/3));
   var x = document.getElementById('insiderAttack');
   x.style.display = "block";
+  if(developers>0){
+    developers--;
+    document.getElementById('developers').innerHTML = developers;
+  }
 }
 
 function insiderClick(){

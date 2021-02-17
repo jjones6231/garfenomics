@@ -1,4 +1,4 @@
-var garfcoin = 8000;
+var garfcoin = 0;
 var developers = 0;
 var gametime = 0;
 var security = 0;

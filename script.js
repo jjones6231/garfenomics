@@ -13,6 +13,7 @@ var training = 0;
 var antivirus = 0;
 var access = 0;
 var protection = 0;
+var activeRansom = false;
 
 function garfClick(number){
   garfcoin += number;
@@ -177,12 +178,22 @@ function ransomWare(ransom){
   x.style.display = "block";
   var y = document.getElementById('ransomInfo');
   y.style.display = "block";
+  activeRansom=true;
+  var buttons = document.getElementsByClassName("button");
+  for(var i = 0; i < buttons.length; i++){
+    buttons[i].disabled = true;
+  }
 }
 
 function ransomPay(){
   subCoin(ransomAmmount);
   document.getElementById('ransomNotice').style.display = "none";
   ransomAmmount = 0;
+  activeRansom=false;
+  var buttons = document.getElementsByClassName("button");
+  for(var i = 0; i < buttons.length; i++){
+    buttons[i].disabled = false;
+  }
 }
 
 function ransomClick(){
@@ -227,7 +238,7 @@ window.setInterval(function(){
   gametime++;
   if(ddosTime < 10){
     ddosTime++;
-  } else {
+  } else if(!activeRansom){
     passiveGain();
   }
   hacks();

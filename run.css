@@ -18,6 +18,53 @@
   background-image: url("images/employee.png");
 }
 
+.popup{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .employeepopup{
+  visibility: hidden;
+  width: 238px;
+  background-color: grey;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 0%;
+  /*margin-left: -80px;*/
+}
+
+.popup .employeepopup::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popup #button1:hover + .employeepopup{
+  visibility: visible;
+  opacity: 1;
+}
+
 .button2{
   background-image: url("images/ad.png")
 }
@@ -155,4 +202,22 @@ p{
   font-size: 20px;
   border: none;
   display: none;
+}
+
+@-webkit-keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }

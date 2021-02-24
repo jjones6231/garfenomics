@@ -21,7 +21,7 @@ function garfClick(number){
 };
 
 function mouseClick(){
-  garfcoin += mouseStrength;
+  garfcoin += (1+developers)*Math.pow(2, PCs);
   document.getElementById("counter").innerHTML = garfcoin;
 }
 

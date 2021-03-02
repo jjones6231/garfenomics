@@ -19,51 +19,84 @@
           <img src="garfCoin.png" alt="garf" id="garf" onClick="mouseClick()">
         </center>
       </div>
-      <div class="buttons popup">
-        <button type="button" class="button button1" id="button1" onClick="newDev()">
-          Developers: <span id="developers">0</span><br>
-          Cost: <span id="developerCost">10</span>
-        </button>
-        <span class="employeepopup" id="check">produces 1 garfcoin per second<br>adds an extra garf coin each time you click</span>
-        <button type = "button" class="button button2" onClick="newSec()">
-          Security Experts: <span id="security">0</span><br>
-          Cost: <span id="secCost">100</span>
-        </button>
-        <button type = "button" class="button button3" onClick="newPC()">
-          PCs: <span id="PCs">0</span><br>
-          Cost: <span id="PCCost">2000</span>
-        </button>
-        <button type = "button" class="button button4" onClick="newOffice()">
-          Office: <span id="offices">0</span><br>
-          Cost: <span id="officeCost">100000</span>
-        </button>
-        <button type = "button" class="button button5" onClick="newJim()">
-          Jim Davis: <span id="jims">0</span><br>
-          Cost: <span id="jimCost">20000000</span>
-        </button>
+      <div class="buttons ">
+
+        <div class ="popupBox">
+          <button type="button" class="button button1" id="button1" onClick="newDev()">
+            Developers: <span id="developers">0</span><br>
+            Cost: <span id="developerCost">10</span>
+          </button>
+          <span class="popup employeePopup" id="check">produces 1 garfcoin per second<br>adds an extra garf coin each time you click</span>
+        </div>
+
+        <div class ="popupBox">
+          <button type = "button" class="button button2" onClick="newSec()">
+            Security Experts: <span id="security">0</span><br>
+            Cost: <span id="secCost">100</span>
+          </button>
+          <span class="popup securityPopup" id="check">produces 5 garfcoin per second<br>allows you to buy 1 security upgrade</span>
+        </div>
+
+        <div class ="popupBox">
+          <button type = "button" class="button button3" onClick="newPC()">
+            PCs: <span id="PCs">0</span><br>
+            Cost: <span id="PCCost">2000</span>
+          </button>
+          <span class="popup pcPopup" id="check">Doubles the amount of garfcoin you earn per click</span>
+        </div>
+
+        <div class ="popupBox">
+          <button type = "button" class="button button4" onClick="newOffice()">
+            Office: <span id="offices">0</span><br>
+            Cost: <span id="officeCost">100000</span>
+          </button>
+          <span class="popup officesPopup" id="check">Produces 1000 garfcoin per second</span>
+        </div>
+
+        <div class ="popupBox">
+          <button type = "button" class="button button5" onClick="newJim()">
+            Jim Davis: <span id="jims">0</span><br>
+            Cost: <span id="jimCost">20000000</span>
+          </button>
+          <span class="popup jimPopup" id="check">The Creator himself<br>produces 100000 garfcoin per second</span>
+        </div>
+
       </div>
 
       <div class="buttons2">
 
-        <button type = "button" class="button button6" onClick="newTraining()">
-          Employee Training: <span id="training">0</span><br>
-          Cost: <span id="trainingCost">2000</span>
-        </button>
+        <div class ="popupBox">
+          <button type = "button" class="button button6" onClick="newTraining()">
+            Employee Training: <span id="training">0</span><br>
+            Cost: <span id="trainingCost">2000</span>
+          </button>
+          <span class="popup trainingPopup" id="check">Reduces the likelihood of phishing attacks</span>
+        </div>
 
-        <button type = "button" class="button button7" onClick="newAntivirus()">
-          Antivirus: <span id="antivirus">0</span><br>
-          Cost: <span id="antivirusCost">2000</span>
-        </button>
+        <div class ="popupBox">
+          <button type = "button" class="button button7" onClick="newAntivirus()">
+            Antivirus: <span id="antivirus">0</span><br>
+            Cost: <span id="antivirusCost">2000</span>
+          </button>
+          <span class="popup antivirusPopup" id="check">Reduces the likelihood of ransomware attacks</span>
+        </div>
 
-        <button type = "button" class="button button8" onClick="newAccess()">
-          Access Control: <span id="access">0</span><br>
-          Cost: <span id="accessCost">2000</span>
-        </button>
+        <div class ="popupBox">
+          <button type = "button" class="button button8" onClick="newAccess()">
+            Access Control: <span id="access">0</span><br>
+            Cost: <span id="accessCost">2000</span>
+          </button>
+          <span class="popup accessPopup" id="check">Reduces the likelihood of insider attacks</span>
+        </div>
 
-        <button type = "button" class="button button9" onClick="newProtection()">
-          DDos Protection: <span id="protection">0</span><br>
-          Cost: <span id="protectionCost">2000</span>
-        </button>
+        <div class ="popupBox">
+          <button type = "button" class="button button9" onClick="newProtection()">
+            DDos Protection: <span id="protection">0</span><br>
+            Cost: <span id="protectionCost">2000</span>
+          </button>
+          <span class="popup protectionPopup" id="check">Reduces the likelihood of DDoS attacks</span>
+        </div>
+
       </div>
 
     </div>

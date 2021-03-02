@@ -14,6 +14,7 @@ var antivirus = 0;
 var access = 0;
 var protection = 0;
 var activeRansom = false;
+var unusedSecurity = 0;
 
 function garfClick(number){
   garfcoin += number;
@@ -21,7 +22,7 @@ function garfClick(number){
 };
 
 function mouseClick(){
-  garfcoin += (1+developers)*Math.pow(2, PCs);
+  garfcoin += developers+1*Math.pow(2, PCs);
   document.getElementById("counter").innerHTML = garfcoin;
 }
 
@@ -49,6 +50,7 @@ function newSec(){
   var cost = Math.floor(100 * Math.pow(1.1, security));
   if(garfcoin >= cost){
     security = security + 1;
+    unusedSecurity++;
     subCoin(cost);
     document.getElementById('security').innerHTML = security;
   }
@@ -91,47 +93,59 @@ function newJim(){
 };
 
 function newTraining(){
-  var cost = Math.floor(2000 * Math.pow(1.1, training));
-  if(garfcoin >= cost){
-    training = training + 1;
-    subCoin(cost);
-    document.getElementById('training').innerHTML = training;
+  if(unusedSecurity>0){
+    var cost = Math.floor(2000 * Math.pow(1.1, training));
+    if(garfcoin >= cost){
+      training = training + 1;
+      subCoin(cost);
+      document.getElementById('training').innerHTML = training;
+    }
+    var nextCost = Math.floor(2000 * Math.pow(1.1, training));
+    document.getElementById('trainingCost').innerHTML = nextCost;
+    unusedSecurity--;
   }
-  var nextCost = Math.floor(2000 * Math.pow(1.1, training));
-  document.getElementById('trainingCost').innerHTML = nextCost;
 };
 
 function newAntivirus(){
-  var cost = Math.floor(2000 * Math.pow(1.1, antivirus));
-  if(garfcoin >= cost){
-    antivirus = antivirus + 1;
-    subCoin(cost);
-    document.getElementById('antivirus').innerHTML = antivirus;
+  if(unusedSecurity>0){
+    var cost = Math.floor(2000 * Math.pow(1.1, antivirus));
+    if(garfcoin >= cost){
+      antivirus = antivirus + 1;
+      subCoin(cost);
+      document.getElementById('antivirus').innerHTML = antivirus;
+    }
+    var nextCost = Math.floor(2000 * Math.pow(1.1, antivirus));
+    document.getElementById('antivirusCost').innerHTML = nextCost;
+    unusedSecurity--;
   }
-  var nextCost = Math.floor(2000 * Math.pow(1.1, antivirus));
-  document.getElementById('antivirusCost').innerHTML = nextCost;
 };
 
 function newAccess(){
-  var cost = Math.floor(2000 * Math.pow(1.1, access));
-  if(garfcoin >= cost){
-    access = access + 1;
-    subCoin(cost);
-    document.getElementById('access').innerHTML = access;
+  if(unusedSecurity>0){
+    var cost = Math.floor(2000 * Math.pow(1.1, access));
+    if(garfcoin >= cost){
+      access = access + 1;
+      subCoin(cost);
+      document.getElementById('access').innerHTML = access;
+    }
+    var nextCost = Math.floor(2000 * Math.pow(1.1, access));
+    document.getElementById('accessCost').innerHTML = nextCost;
+    unusedSecurity--;
   }
-  var nextCost = Math.floor(2000 * Math.pow(1.1, access));
-  document.getElementById('accessCost').innerHTML = nextCost;
 };
 
 function newProtection(){
-  var cost = Math.floor(2000 * Math.pow(1.1, protection));
-  if(garfcoin >= cost){
-    protection = protection + 1;
-    subCoin(cost);
-    document.getElementById('protection').innerHTML = protection;
+  if(unusedSecurity>0){
+    var cost = Math.floor(2000 * Math.pow(1.1, protection));
+    if(garfcoin >= cost){
+      protection = protection + 1;
+      subCoin(cost);
+      document.getElementById('protection').innerHTML = protection;
+    }
+    var nextCost = Math.floor(2000 * Math.pow(1.1, protection));
+    document.getElementById('protectionCost').innerHTML = nextCost;
+    unusedSecurity--;
   }
-  var nextCost = Math.floor(2000 * Math.pow(1.1, protection));
-  document.getElementById('protectionCost').innerHTML = nextCost;
 };
 
 function ddos(){

@@ -19,11 +19,7 @@
   transform: translateY(4px);
 }
 
-.button1{
-  background-image: url("images/employee.png");
-}
-
-.popup{
+.popupBox{
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -33,7 +29,7 @@
   user-select: none;
 }
 
-.popup .employeepopup{
+.popupBox .popup{
   visibility: hidden;
   width: 238px;
   background-color: grey;
@@ -48,7 +44,7 @@
   /*margin-left: -80px;*/
 }
 
-.popup .employeepopup::after{
+.popupBox .popup::after{
   content: "";
   position: absolute;
   top: 100%;
@@ -59,15 +55,57 @@
   border-color: #555 transparent transparent transparent;
 }
 
-.popup .show{
+.popupBox .show{
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
-.popup #button1:hover + .employeepopup{
+.popupBox #button1:hover + .employeePopup{
   visibility: visible;
   opacity: 1;
+}
+
+.popupBox .button2:hover + .securityPopup{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupBox .button3:hover + .pcPopup{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupBox .button4:hover + .officesPopup{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupBox .button5:hover + .jimPopup{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupBox .button6:hover + .trainingPopup{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupBox .button7:hover + .antivirusPopup{
+  visibility: visible;
+  opacity: 1;
+}
+.popupBox .button8:hover + .accessPopup{
+  visibility: visible;
+  opacity: 1;
+}
+.popupBox .button9:hover + .protectionPopup{
+  visibility: visible;
+  opacity: 1;
+}
+
+.button1{
+  background-image: url("images/employee.png");
 }
 
 .button2{

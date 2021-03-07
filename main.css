@@ -2,8 +2,8 @@
   border: none;
   text-align: center;
   font-size: 12px;
-  color: black;
-  background-color: lightgreen;
+  color: white;
+  background-color: Black;
   transition: 0.25s;
   width: 100px;
   height: 50px;
@@ -11,17 +11,24 @@
   margin: 0;
   padding: 0;
   outline: none;
-
+  font-family: Lucida Bright;
 }
 
 .button:hover{
-  background-color: red;
+  background-color: #D68717;
+  color: Black;
+}
+
+.selected{
+  background-color: #D68717;
+  color: Black;
 }
 
 body{
-  background-color: #DAAAA5;
+  background-color: #D68717;
   margin: 0;
   padding: 0;
+  font-family: Lucida Bright;
 }
 
 h1{
@@ -52,6 +59,6 @@ p{
 
 .header{
   text-align: right;
-  background-color: white;
+  background-color: black;
   height: 50px;
 }

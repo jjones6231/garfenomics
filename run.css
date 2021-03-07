@@ -16,6 +16,38 @@
   border-radius: 1px;
 }
 
+.headButton{
+  border: none;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+  background-color: #D68717;
+  transition: 0.25s;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Lucida Bright;
+}
+
+.headButton:hover{
+  background-color: black;
+  color: white;
+}
+
+.selected{
+  background-color: black;
+  color: white;
+}
+
+.header{
+  text-align: right;
+  background-color: #D68717;
+  height: 50px;
+}
+
 .button:active {
   transform: translateY(4px);
 }
@@ -188,7 +220,7 @@ p{
   width: 250px;
   height: 100px;
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 
 .buttons2{
@@ -196,7 +228,7 @@ p{
   width: 250px;
   height: 100px;
   position: absolute;
-  left: 20px;
+  left: 0px;
 }
 
 .text{

@@ -141,7 +141,7 @@
 }
 
 .button2{
-  background-image: url("images/ad.png")
+  background-image: url("images/garf.png")
 }
 
 .button3{
@@ -241,63 +241,76 @@ p{
 }
 
 .ddos{
-  position: sticky;
-  bottom: 100px;
-  left: 40px;
-  height: 100px;
-  width: 1000px;
-  background-color: red;
+  height: 100%;
+  width: 100%;
+  background-color: #D68717;
   font-size: 20px;
   display: none;
   border: none;
 }
 
 .phish{
-  position: sticky;
-  bottom: 100px;
-  left: 40px;
-  height: 100px;
-  width: 1000px;
-  background-color: red;
+  height: 100%;
+  width: 100%;
+  background-color: #D68717;
   font-size: 20px;
   display: none;
   border: none;
 }
 
 .insiderAttack{
-  position: sticky;
-  bottom: 100px;
-  left: 40px;
-  height: 100px;
-  width: 1000px;
-  background-color: red;
+  height: 100%;
+  width: 100%;
+  background-color: #D68717;
   font-size: 20px;
   display: none;
   border: none;
 }
 
 .ransomInfo{
-  position: sticky;
-  bottom: 100px;
-  left: 40px;
-  height: 100px;
-  width: 1000px;
-  background-color: red;
+  height: 100%;
+  width: 100%;
+  background-color: #D68717;
   font-size: 20px;
   display: none;
   border: none;
 }
 
 .ransomNotice{
-  position: absolute;
-  top: 15%;
-  left: 40px;
-  height: 100px;
-  width: 300px;
+  position: relative;
+  height: 75px;
+  width: 150px;
   background-color: red;
   font-size: 20px;
   border: none;
-  display: none;
+  display: show;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attackBox{
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+}
+
+.centerText{
+  width: 500px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.centerRansom{
+  width: 125px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 @-webkit-keyframes fadeIn{

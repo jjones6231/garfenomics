@@ -53,6 +53,7 @@ function newSec(){
     unusedSecurity++;
     subCoin(cost);
     document.getElementById('security').innerHTML = security;
+    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
   var nextCost = Math.floor(100 * Math.pow(1.1, security));
   document.getElementById('secCost').innerHTML = nextCost;
@@ -103,6 +104,7 @@ function newTraining(){
     var nextCost = Math.floor(2000 * Math.pow(1.1, training));
     document.getElementById('trainingCost').innerHTML = nextCost;
     unusedSecurity--;
+    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 
@@ -117,6 +119,7 @@ function newAntivirus(){
     var nextCost = Math.floor(2000 * Math.pow(1.1, antivirus));
     document.getElementById('antivirusCost').innerHTML = nextCost;
     unusedSecurity--;
+    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 
@@ -131,6 +134,7 @@ function newAccess(){
     var nextCost = Math.floor(2000 * Math.pow(1.1, access));
     document.getElementById('accessCost').innerHTML = nextCost;
     unusedSecurity--;
+    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 
@@ -145,6 +149,7 @@ function newProtection(){
     var nextCost = Math.floor(2000 * Math.pow(1.1, protection));
     document.getElementById('protectionCost').innerHTML = nextCost;
     unusedSecurity--;
+    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 

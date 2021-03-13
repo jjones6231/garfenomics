@@ -250,27 +250,6 @@ function hacks(){
       ransomWare(ransom + 1000);
     }
   }
-  // if(gametime > 50 && check == 0){
-  //   if(checkSafe>protection){
-  //     ddos();
-  //   }
-  // }
-  // if(gametime > 100 && check == 1){
-  //   if(checkSafe>training){
-  //     phish();
-  //   }
-  // }
-  // if(gametime > 150 && check == 2){
-  //   if(checkSafe>access){
-  //     insiderAttack();
-  //   }
-  // }
-  // if(gametime > 150 && check == 3){
-  //   if(checkSafe>antivirus){
-  //     var ransom = Math.floor(10000* Math.random());
-  //     ransomWare(ransom + 1000);
-  //   }
-  // }
 }
 
 

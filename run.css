@@ -3,8 +3,6 @@
 }
 
 .button {
-  /*border-style: solid;
-  border-color: black;*/
   border: none;
   text-align: right;
   font-size: 20px;
@@ -73,7 +71,6 @@
   z-index: 1;
   bottom: 100%;
   left: 0%;
-  /*margin-left: -80px;*/
 }
 
 .popupBox .popup::after{

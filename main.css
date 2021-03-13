@@ -29,19 +29,9 @@ body{
   margin: 0;
   padding: 0;
   font-family: Lucida Bright;
+  text-align: right;
 }
 
-h1{
-  text-align: center;
-}
-
-h3{
-  text-align: center;
-}
-
-p{
-  text-align: center;
-}
 
 .center{
   display: flex;
@@ -55,6 +45,14 @@ p{
   display: absolute;
   height: auto;
   width: 800px;
+  text-align: left;
+}
+
+.bgcolor{
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  background-color: #E6C253;
 }
 
 .header{

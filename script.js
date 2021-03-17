@@ -100,11 +100,11 @@ function newTraining(){
       training = training + 1;
       subCoin(cost);
       document.getElementById('training').innerHTML = training;
+      unusedSecurity--;
+      document.getElementById('upgrades').innerHTML = unusedSecurity;
     }
     var nextCost = Math.floor(2000 * Math.pow(1.1, training));
     document.getElementById('trainingCost').innerHTML = nextCost;
-    unusedSecurity--;
-    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 
@@ -115,11 +115,11 @@ function newAntivirus(){
       antivirus = antivirus + 1;
       subCoin(cost);
       document.getElementById('antivirus').innerHTML = antivirus;
+      unusedSecurity--;
+      document.getElementById('upgrades').innerHTML = unusedSecurity;
     }
     var nextCost = Math.floor(2000 * Math.pow(1.1, antivirus));
     document.getElementById('antivirusCost').innerHTML = nextCost;
-    unusedSecurity--;
-    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 
@@ -130,11 +130,11 @@ function newAccess(){
       access = access + 1;
       subCoin(cost);
       document.getElementById('access').innerHTML = access;
+      unusedSecurity--;
+      document.getElementById('upgrades').innerHTML = unusedSecurity;
     }
     var nextCost = Math.floor(2000 * Math.pow(1.1, access));
     document.getElementById('accessCost').innerHTML = nextCost;
-    unusedSecurity--;
-    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 
@@ -145,11 +145,11 @@ function newProtection(){
       protection = protection + 1;
       subCoin(cost);
       document.getElementById('protection').innerHTML = protection;
+      unusedSecurity--;
+      document.getElementById('upgrades').innerHTML = unusedSecurity;
     }
     var nextCost = Math.floor(2000 * Math.pow(1.1, protection));
     document.getElementById('protectionCost').innerHTML = nextCost;
-    unusedSecurity--;
-    document.getElementById('upgrades').innerHTML = unusedSecurity;
   }
 };
 

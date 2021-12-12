@@ -229,26 +229,27 @@ function passiveGain(){
 function hacks(){
   var check = Math.floor(100* Math.random())
   var checkSafe = Math.floor(5* Math.random()+1+offices);
-  if(gametime = 50){
-  //  if(checkSafe+offices>protection){
+  if(gametime > 50 && 1 < check && check < 4){
+    if(checkSafe+offices>protection){
       ddos();
-  //  }
+      console.log(check);
+    }
   }
-  if(gametime = 100){
-  //  if(checkSafe+Math.floor(developers/10)>training){
+  if(gametime > 100 && 4 < check && check < 7){
+    if(checkSafe+Math.floor(developers/10)>training){
       phish();
-  //  }
+    }
   }
-  if(gametime = 150){
-    //if(checkSafe+Math.floor(developers/10)>access){
+  if(gametime > 150 && 7 < check && check < 10 ){
+    if(checkSafe+Math.floor(developers/10)>access){
       insiderAttack();
-    //}
+    }
   }
-  if(gametime = 200){
-    //if(checkSafe+PCs>antivirus){
+  if(gametime > 200 && 10 < check && check < 13){
+    if(checkSafe+PCs>antivirus){
       var ransom = Math.floor(10000* Math.random());
       ransomWare(ransom + 1000);
-    //}
+    }
   }
 }
 
